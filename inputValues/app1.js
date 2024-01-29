@@ -6,8 +6,9 @@ function onSubmit(event) {
     event.preventDefault();
     loginForm.classList.add("hidden");
     const username=loginInput.value;
+    greeting.classList.remove("hidden")
+    greeting.innerText=`Hello! ${username} This is the testing`;
     console.log(username);
-    greeting.innerText=`Hello! ${username}`;
     };
 
 function handleLinkClick(event){
