@@ -5,7 +5,9 @@ const link = document.querySelector("a")
 
 function onSubmit(event) {
     event.preventDefault();
-    console.log(loginInput.value);
+    const username=loginInput.value;
+    loginForm.classList.add("hidden")
+    console.log(username);
     };
 
 function handleLinkClick(event){

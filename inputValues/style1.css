@@ -2,6 +2,6 @@ body {
     background-color: aquamarine;
 }
 
-#hidden{
+.hidden{
     display: none;
 }
