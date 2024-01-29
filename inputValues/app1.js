@@ -1,13 +1,13 @@
 const loginForm =document.querySelector("#login-form")
 const loginInput = document.querySelector("#login-form input")
-
-const link = document.querySelector("a")
+const greeting = document.querySelector("#greeting")
 
 function onSubmit(event) {
     event.preventDefault();
+    loginForm.classList.add("hidden");
     const username=loginInput.value;
-    loginForm.classList.add("hidden")
     console.log(username);
+    greeting.innerText=`Hello! ${username}`;
     };
 
 function handleLinkClick(event){
@@ -17,4 +17,3 @@ function handleLinkClick(event){
 }
 
 loginForm.addEventListener("submit", onSubmit);
-link.addEventListener("click", handleLinkClick);
